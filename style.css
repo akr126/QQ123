@@ -1,0 +1,212 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.topbar{
+  background-color: pink;
+  width: 100%;
+  height: 10px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width:400px;
+  z-index: 999;
+}
+.banner img{
+  margin-top: -50px;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  color: pink;
+  font-size: 28px;
+  position: relative;
+
+}
+
+h2:before, h2:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: pink;
+}
+h2:before{
+  left: 50px;
+}
+h2:after{
+  right: 50px;  
+}
+
+.pd_month{
+  display: flex;
+  background-color: pink;
+  margin: 0 50px;
+}
+.m_photo{
+  flex: 2;
+}
+.m_photo img{
+  width: 100%;
+  height: 100%;
+}
+.m_info{
+  flex: 3;
+  color: white;
+  padding: 30px;
+}
+.m_info h3{
+  font-size: 24px;
+}
+.m_price{
+  background-color: #fff;
+  color: pink;
+  width: 80px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 900;
+  margin-left: 20px;
+}
+.m_info p{
+  line-height: 2;
+}
+
+.m_btn, .h_btn{
+  display: inline-block;
+  text-decoration: none;
+  cursor: grab;
+  background-color: pink;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 100px;
+  letter-spacing: 10px;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1em;
+  text-indent: 1em;
+  outline:none;
+}
+.m_btn:hover{
+  background-color: #fff;
+  color: pink;
+}
+
+.pd_hot {
+  padding: 70px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.h_product {
+  width: 30%;
+  height: 300px;
+  margin: 50px 10px;
+  background-color:#ACD6FF;
+  text-align: center;
+  position: relative;
+}
+.h_product img {
+  width: 70%;
+  margin-top: -70px;
+  border: 20px solid white;
+}
+a {
+  text-decoration: none;
+}
+.h_product a {
+  color: #333;
+}
+.h_product h4 {
+  font-size: 16px;
+  margin: 20px 40px;
+  text-align: left;
+}
+
+.h_price {
+position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color:	#005AB5;
+  font-weight: 500;
+}
+.product_btn {
+  text-align: center;
+}
+.h_btn {
+  color: pink;
+  border: 2px solid pink;
+  background-color: #fff;
+}
+.h_btn:hover {
+  background-color: pink;
+  color: white;
+}
+
+footer {
+  margin: 200px 0 0;
+}
+.info {
+  display: flex;
+  margin: 0;
+  padding: 30px 50px;
+  background-color: #eee;
+}
+
+.info_img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.info_img img {
+  width: 100%;
+}
+.info_list {
+  flex: 1;
+  padding: 0px 40px;
+}
+.info_list h4 {
+  color: pink;
+  font-size: 25px;
+}
+
+li {
+  list-style-type: '◆ ';
+  margin: 10px 0;
+}
+.f_info {
+  background-color: pink;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.f_link a {
+  color: white;
+}
+@media screen and (max-width: 720px){
+
+  .banner img{
+    margin-top: -50px;
+    height: 50%;
+    width: auto;
+  }
+  .pd_month,.info{
+    display: block;
+    margin: 0;
+    
+  }
+  .m_photo img{
+    width:  calc(100% - 50px);
+    border: 25px solid #fff;
+  }
+  .h_product{
+    width: 45%;
+  }
+}
